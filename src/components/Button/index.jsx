@@ -1,10 +1,14 @@
 import { Component } from "react";
+import './style.css'
+
 
 export class Button extends Component {
     render() {
-        const {text, quandoClica} = this.props;
+        const {text, quandoClica, morePosts} = this.props;
         return (
-            <button onClick={quandoClica}>
+            <button className="button"
+                disabled={morePosts}
+                onClick={quandoClica}>
                 {text}
             </button>
 
