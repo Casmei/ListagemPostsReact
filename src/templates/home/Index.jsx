@@ -14,7 +14,7 @@ class Home extends Component {
         posts: [],
         allPosts: [],
         page: 0,
-        postsPerPage: 10,
+        postsPerPage: 55,
         searchValue: ''
     };
 
@@ -65,35 +65,38 @@ class Home extends Component {
 
         return (
             <section className="container">
-                <div className='search-container'>
-                {!!searchValue && 
-                    (
-                        <h1>Search Value: {searchValue}</h1>
-                    )
-                }
 
-                <TextInput searchValue={searchValue} handleChange={this.handleChange}/>
-                </div>
-
-                {filteredPosts.length > 0 && (
-                    <Posts posts={filteredPosts} />
-                )}
-
-                {filteredPosts.length === 0 && (
-                    <p>Não existe posts</p>
-                )}
-                
-                {!searchValue && 
-                    (
-                        <div className="button-container">
-                        <Button
-                        morePosts={noMorePosts}
-                        text="Load more posts"
-                        quandoClica={this.loadMorePosts}
-                        />
+                    <div className='search-container'>
+                        <div className='tudo'>
+                            <div className='title-header'>
+                                <p>Codelândia</p>
+                                <p>blog</p>
+                            </div>
+                            <TextInput searchValue={searchValue} handleChange={this.handleChange}/>
+                        </div>
                     </div>
-                    )
-                }
+                <div className="wrapper">
+
+                    {filteredPosts.length > 0 && (
+                        <Posts posts={filteredPosts} />
+                    )}
+
+                    {filteredPosts.length === 0 && (
+                        <p>Não existe posts</p>
+                    )}
+                    
+                    {!searchValue && 
+                        (
+                            <div className="button-container">
+                            <Button
+                            morePosts={noMorePosts}
+                            text="Load more posts"
+                            quandoClica={this.loadMorePosts}
+                            />
+                        </div>
+                        )
+                    }
+                </div>
 
             </section>
         );

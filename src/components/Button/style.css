@@ -1,13 +1,17 @@
 .button {
     width: 100%;
-    background-color: #147586;
+    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
     color: white;
     border: none;
     padding: 15px 30px;
     cursor: pointer;
+    margin-bottom: 60px;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 5px;
+
 }
 
 .button:disabled {
-    background-color: #888;
+    background: linear-gradient(88.27deg, #292838 0%, #38627a 100%);
     cursor: not-allowed;
 }

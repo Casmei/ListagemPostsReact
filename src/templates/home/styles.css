@@ -1,9 +1,22 @@
-.container {
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400&display=swap');
+
+
+
+/* .container {
     max-width: 1200px;
     margin: auto;
     min-height: 100vh;
 
     padding: 30px;
+} */
+
+.container {
+    background-color: #F3F5F7;
+}
+
+
+.wrapper {
+    margin: 0 15%;
 }
 
 .button-container {
@@ -13,10 +26,24 @@
 }
 
 .search-container {
+
+    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+    padding: 41px 0;
     margin-bottom: 30px;
 }
 
-.search-container h1 {
-    margin-bottom: 30px;
+.title-header {
+
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 73px;
+}
+
+.tudo {
+    margin: 0 15%;
+
 }
 

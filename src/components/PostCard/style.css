@@ -1,18 +1,25 @@
 .post {
+    font-family: 'Lexend Deca', sans-serif;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
     transition: transform 100ms ease-in-out;
+    margin-bottom: 50px;
+    padding: 25px;
 }
 
+h2 {
+    padding-bottom: 8px;
+    color: #1A202C;
+}
+
+.post p {
+    color: #717171;
+}
 .post:hover {
-    transform: scale(1.05);
-}
-
-.post img {
-    max-width: 100%;
+    transform: scale(1.01);
 }
 
 
 .post-content {
-    padding: 30px;
+    padding: 25px;
 }

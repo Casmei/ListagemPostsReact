@@ -1,6 +1,7 @@
 import './style.css'
 export const TextInput = ({searchValue, handleChange}) => {
     return (
+        <>
         <input
         className="text-input"
         onChange={handleChange}
@@ -8,5 +9,6 @@ export const TextInput = ({searchValue, handleChange}) => {
         type="search"
         placeholder='Type your search'
         />
+        </>
     )
 }
