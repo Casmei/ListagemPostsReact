@@ -1,6 +1,5 @@
 import './style.css'
-export const TextInput = ({searchValue, handleChange}) => {
-    return (
+const TextInput = ({searchValue, handleChange}) => (
         <>
         <input
         className="text-input"
@@ -10,5 +9,6 @@ export const TextInput = ({searchValue, handleChange}) => {
         placeholder='Type your search'
         />
         </>
-    )
-}
+)
+
+export default TextInput;
